@@ -15,6 +15,9 @@ d3Cell.create = function(el, props, state) {
 
 d3Cell.update = function(el, state) {
   var cellGroup = d3.select(el).selectAll('.cellGroup');
+
+  console.log(state.data);
+
   var cell = cellGroup.selectAll('.cell')
     .data(state.data, function(d) {
       return d;
