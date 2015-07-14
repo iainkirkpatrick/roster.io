@@ -1,6 +1,8 @@
 var React = require('react');
 var Cell = require('./cell');
 
+//grid should render to whatever position it's parent component / instigator specifies, shouldn't contain any specific pixel coords
+
 // var sampleData = [
 //   {width: 20, height: 20, x: 5, y: 5},
 //   {width: 20, height: 20, x: 105, y: 105}
