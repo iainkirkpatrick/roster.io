@@ -11,9 +11,10 @@
     ]
   },
   "dependencies": {
+    "browserify": "*",
     "react": "^0.13.3",
     "reactify": "^1.1.1",
-    "browserify": "*"
+    "svg-create-element": "^1.0.0"
   },
   "devDependencies": {
     "watchify": "^3.2.3"

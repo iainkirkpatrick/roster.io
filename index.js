@@ -1,4 +1,4 @@
 var React = require('react');
-var App = require('./app');
+var Grid = require('./grid');
 
-React.render(<App />, document.body);
+React.render(<Grid />, document.body);
