@@ -44,7 +44,12 @@ var Cell = React.createClass({
 
   render: function() {
     return (
-      <rect className="CellReact" width={this.props.width} height={this.props.height} ></rect>
+      <rect className="CellReact"
+      width={this.props.width}
+      height={this.props.height}
+      x={this.props.column}
+      y={this.props.row} >
+      </rect>
     );
   }
 });
