@@ -1,7 +1,5 @@
 var React = require('react');
-var Grid = require('./grid');
+var Table = require('./table')
 
-React.render(<Grid />, document.body);
 
-// var Cell = require('./cell');
-// React.render(<Cell />, document.body);
+React.render(<Table width={600} height={300} />, document.body);
