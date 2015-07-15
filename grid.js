@@ -2,6 +2,7 @@ var React = require('react');
 var Cell = require('./cell');
 
 //grid should render to whatever position it's parent component / instigator specifies, shouldn't contain any specific pixel coords
+//grid needs to tell each cell where to render in terms of the rest of the other cells in the grid
 
 // var sampleData = [
 //   {width: 20, height: 20, x: 5, y: 5},
@@ -29,6 +30,7 @@ var Grid = React.createClass({
   render: function() {
     var blocks = this.state.data.rows;
     var days = this.state.data.columns;
+    var cellSize = this.state.data.cellSize;
 
     //map: for each item in the array, return an array with a corresponding thing (component)
     var column = [];
@@ -60,7 +62,11 @@ var Grid = React.createClass({
 
     return (
       <div className="Grid">
-        {rowOfColumns}
+        <svg>
+          <g>
+            <Cell cellSize={cellSize} />
+          </g>
+        </svg>
       </div>
     );
   }

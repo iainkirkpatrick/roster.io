@@ -1,4 +1,7 @@
 //template stolen from http://nicolashery.com/integrating-d3js-visualizations-in-a-react-app/
+//just the D3 code
+//needs to be passed a 'g' element to render onto, as well as 'state' which contains data for the height, width, and (x,y) 
+
 
 var d3Cell = {};
 
