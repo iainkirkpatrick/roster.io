@@ -1,6 +1,9 @@
 var React = require('react');
 var createElement = require('svg-create-element');
-var d3Cell = require('./d3Cell');
+
+//is it best to just require d3 stuff for animation, transitions etc?
+//i.e. we set up some d3 events etc in componentDidMount, componentDidUpdate?
+//var d3Cell = require('./d3Cell');
 
 var Cell = React.createClass({
   getDefaultProps: function() {
